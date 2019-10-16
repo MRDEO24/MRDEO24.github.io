@@ -1,0 +1,62 @@
+.jumbo{
+	background-image: url(img/Iwallpaper.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: 0 -55px;
+	height: 400px;
+}
+
+	html {
+		position: relative;
+		min-height: 100%;
+		
+	}
+
+	body {
+		margin-bottom: 60px;
+		background-color: #2a2929;
+		/* Margin bottom by footer height */
+	}
+
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 60px;
+		/* Set the fixed height of the footer here */
+		line-height: 60px;
+		/* Vertically center the text there */
+		background-color: #f5f5f5;
+	}
+
+.col-md-6 .card .card-body{
+	height: 200px;
+}
+
+section{
+	min-height: 400px;
+}
+
+.jumbotron h1, .jumbotron p{
+	text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+
+/*Scrollbar*/
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-track{
+	background: #666;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #f0aa25;
+	border-radius: 10px;
+}
+
+
+container .sey{
+	width: 100%;
+	background-color: aqua;
+}
