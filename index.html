@@ -9,10 +9,11 @@
 <link rel="stylesheet" href="asset/css/bootstrap.min.css">
 <link rel="stylesheet" href="fontawesome/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="flipcard.css">
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-2">
 		<a class="navbar-brand page-scroll ml-5" href="#home"><img class="rounded-circle mr-3" src="img/icon.jpg" width="50px" alt="icon">MRDEO.24</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -43,65 +44,93 @@
 			<p class="lead">Website ini berisi tentang saya dan hal-hal lain tentang saya.</p>
 			<a href="" class="btn btn-dark mt-3" data-toggle="modal" data-target=".bd-example-modal-lg">About Me</a>
 			<!-- Modal -->
-			
+
 		</div>
 	</div>
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalCenteredLabel">Modal title</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">×</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<p>aku seorang kapiten</p>
-						</div>
-					</div>
+	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenteredLabel">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>aku seorang kapiten</p>
 				</div>
 			</div>
+		</div>
+	</div>
 
 	<div class="container">
 		<h2 class="lead text-light text-center mb-5">Apa saja yang saya suka lakukan ?</h2>
 		<div class="row">
-			<div class="col-md-6">
-			<br>
-				<div class="card">
-					<div class="card-body mt-4 text-center">
-						<i class="fas fa-pen fa-3x mb-3"></i>
-						<h4 class="card-title">Drawing thing</h4>
+			<div class="col-md-6 flip-card">
+				<div class="flip-card-inner">
+					<div class="card flip-card-front">
+						<div class="card-body mt-4 text-center">
+							<i class="fas fa-pen fa-3x mb-3"></i>
+							<h4 class="card-title">Drawing thing</h4>
+						</div>
 					</div>
-
+					<div class="card flip-card-back">
+						<div class="card-body text-center">
+							<h5 class="display-5">Menggambar Sesuatu</h5>
+							<p class="lead">Saya suka menggambar dari kecil dan mengasahnya saat Kelas 8 SMP, saya sangat suka menggambar dikertas maupun digital. Aplikasi yang saya pakai biasa nya CorelDraw dan Paint tool SAI.</p>
+					</div>
 				</div>
+			</div>	
 			</div>
-			<div class="col-md-6">
-			<br>
-				<div class="card">
-					<div class="card-body mt-4 text-center">
-						<i class="fas fa-code fa-3x mb-3"></i>
-						<h4 class="card-title">Work with code</h4>
+			<div class="col-md-6 flip-card">
+				<div class="flip-card-inner">
+					<div class="card flip-card-front">
+						<div class="card-body mt-4 text-center">
+							<i class="fas fa-code fa-3x mb-3"></i>
+							<h4 class="card-title">Word with code</h4>
+						</div>
+					</div>
+					<div class="card flip-card-back">
+						<div class="card-body text-center">
+						<h5 class="display-5">Mengoding</h5>
+							<p class="lead">Saya suka pemrograman sejak saya masuk Sekolah menengah kejuruan di jurusan RPL. Karena menurut saya Ngoding itu Seru sekali, kita bisa menyelesaikan suatu masalah dengan program yang kita buat.</p>
 					</div>
 				</div>
+			</div>	
 			</div>
 		</div>
 		<div class="row mt-4">
-			<div class="col-md-6">
-			
-				<div class="card">
-					<div class="card-body mt-4 text-center">
-						<i class="fas fa-gamepad fa-3x mb-3"></i>
-						<h4 class="card-title">Playing Game</h4>
+						<div class="col-md-6 flip-card">
+				<div class="flip-card-inner">
+					<div class="card flip-card-front">
+						<div class="card-body mt-4 text-center">
+							<i class="fas fa-gamepad fa-3x mb-3"></i>
+							<h4 class="card-title">Playing Games</h4>
+						</div>
+					</div>
+					<div class="card flip-card-back">
+						<div class="card-body text-center">
+						<h5 class="display-5">Bermain Game</h5>
+							<p class="lead">Saya sangat suka bermain game dari kecil. Saya suka sekali game RPG jepang seperti Final Fantasy Series, Pokemon di Nintendo. Untuk Mobile saya suka sekali bermain Game Arena of Valor, Saya juga membuat tim bernama NERD.</p>
 					</div>
 				</div>
+			</div>	
 			</div>
-			<div class="col-md-6">
-				<div class="card">
-					<div class="card-body mt-4 text-center">
-						<i class="fas fa-headphones-alt fa-3x mb-3"></i>
-						<h4 class="card-title">Listening Music</h4>
+						<div class="col-md-6 flip-card">
+				<div class="flip-card-inner">
+					<div class="card flip-card-front">
+						<div class="card-body mt-4 text-center">
+							<i class="fas fa-headphones-alt fa-3x mb-3"></i>
+							<h4 class="card-title">Listening Music</h4>
+						</div>
+					</div>
+					<div class="card flip-card-back">
+						<div class="card-body text-center">
+						<h5 class="display-5">Mendengarkan musik</h5>
+							<p class="lead">Untuk musik saya menyukai musik Jepang, Korea. Apalagi musik itu membuat saya semangat untuk menjalani hari. Saya sering mencari arti lirik musik tersebut karena menurut saya musik bukan hanya untuk di dengar tetapi juga diresapi.</p>
 					</div>
 				</div>
+			</div>	
 			</div>
 
 
@@ -115,38 +144,44 @@
 		<div class="container-fluid text-center">
 			<div class="row">
 				<div class="col-sm-12">
-					<h2 class="mt-3 ml-5 lead mb-3  text-light">Creation</h2>
+					<h2 class="mt-3 lead mb-3  text-light">Creation</h2>
 				</div>
 			</div>
 			<div class="row mt-2">
 				<div class="col-sm-4">
-					<a href="">
-						<img class="img-fluid" src="img/creation/1.jpg" alt="">
-					</a>
+					<img class="img-fluid" src="img/creation/1.jpg" alt="" onclick="Fungsi(this);">
 				</div>
 				<div class="col-sm-4">
-					<a href="">
-						<img class="img-fluid" src="img/creation/2.jpg" alt="">
-					</a>
+					<img class="img-fluid" src="img/creation/2.jpg" alt="" onclick="Fungsi(this);">
 				</div>
 				<div class="col-sm-4">
-					<a href="">
-						<img class="img-fluid" src="img/creation/3.jpg" alt="">
-					</a>
+					<img class="img-fluid" src="img/creation/3.jpg" alt="" onclick="Fungsi(this);">
 				</div>
 			</div>
 		</div>
+		<div class="containercreation mt-5 text-center">
+			<!-- Close the image -->
+			<span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="fa fa-times-circle"></i></span>
+
+			<!-- Expanded image -->
+			<img id="expandedImg" style="width:90%;border-radius: 20px;">
+
+			<!-- Image text -->
+			<div id="imgtext"></div>
+		</div>
 	</section>
 
+<!--
 	<section class="coding" id="coding">
 		<div class="container-fluid text-center">
 			<div class="row">
 				<div class="col-sm-12">
-					<h2 class="mt-3 ml-5 lead mb-3  text-light">Coding</h2>
+					<h2 class="mt-3 lead mb-3  text-light">Coding</h2>
 				</div>
 			</div>
 		</div>
-	</section>		
+	</section>
+-->
 
 
 
@@ -156,10 +191,10 @@
 			<span class="text-light">Made with <i class="fa fa-heart" style="color: salmon;"></i> by Muhammad Raihan Ar Rasyid</span>
 		</div>
 	</footer>
-	
+
 	<script src="asset/js/jquery.js"></script>
 	<script src="asset/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
 	<script src="fontawesome/js/all.min.js"></script>
-	
+
 </body></html>
